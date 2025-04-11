@@ -9,6 +9,8 @@ struct ContentView: View {
         Button("Add") {
             answer = number1 + number2
         }
+        .foregroundStyle(.red)
+        .font(.largeTitle)
         Text("\(answer)")
         
     }
