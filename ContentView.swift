@@ -6,6 +6,9 @@ struct ContentView: View {
     var body: some View {
         TextField("enter a number", value: $number2, format: .number)
         TextField("Enter Another Number", value: $number1, format: .number)
+        Button("Add") {
+            answer = number1 + number2
+        }
         Text("\(answer)")
         
     }
